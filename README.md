@@ -1,2 +1,2 @@
 # my-vpn
-akses akun
+akun-premium
