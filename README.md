@@ -1,2 +1,2 @@
 # my-vpn
-akun-premium
+proxy_provider
