@@ -1,0 +1,72 @@
+proxies:
+- name: LinkGo-Sosmed
+  type: trojan
+  server: 104.18.11.39
+  port: 443
+  password: 7f512873-af85-4f00-8588-26a3ca9f8dd8
+  udp: true
+  sni: linkgo.wakvpn.me
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojan-ws"
+  headers:
+    Host: linkgo.wakvpn.me
+- name: IDC-Sosmed
+  type: trojan
+  server: 104.18.11.39
+  port: 443
+  password: member-vip-khairul
+  network: ws
+  sni: id-prem-idch1.kitu.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+  headers:
+    Host: id-prem-idch1.kitu.xyz
+- name: SGC-Sosmed
+  type: trojan
+  server: 104.18.11.39
+  port: 443
+  password: member-vip-sg-khairul
+  network: ws
+  sni: sg-prem-idch1.kitu.xyz
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+  headers:
+    Host: sg-prem-idch1.kitu.xyz
+- name: IDCH-Sosmed
+  type: vmess
+  server: 104.18.11.39
+  port: 443
+  uuid: 16b808ea-c8cb-4767-8302-df095769169b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: id-prem-idch1.kitu.xyz
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: id-prem-idch1.kitu.xyz
+- name: SGCH-Sosmed
+  type: vmess
+  server: 104.18.11.39
+  port: 443
+  uuid: aca366f2-81d5-4d2e-a2c9-47894e528835
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg-prem-idch1.kitu.xyz
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: sg-prem-idch1.kitu.xyz
