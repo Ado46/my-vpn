@@ -1,1 +1,33 @@
-
+proxies:
+- name: ID NUSA-4 STB
+  type: vmess
+  server: 104.18.11.39
+  port: 443
+  uuid: d74cf6e5-0172-4bcd-99a0-ce62e6dce23b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nusa4.nextvpn.cc
+  network: ws
+  ws-opts:
+    path: /vpnneo
+    headers:
+      Host: nusa4.nextvpn.cc
+- name: Hurricane Electric
+  type: vmess
+  server: 104.18.11.39
+  port: 443
+  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-v2ray.sshkit.org
+  network: ws
+  ws-opts:
+    path: /sshkit/911948719/63163e87583a0/
+    headers:
+      Host: sg2-v2ray.sshkit.org
