@@ -1,20 +1,17 @@
 proxies:
-- name: ID NUSA-4 STB
-  type: vmess
+- name: LinkGo
+  type: trojan
   server: 104.18.11.39
   port: 443
-  uuid: d74cf6e5-0172-4bcd-99a0-ce62e6dce23b
-  alterId: 0
-  cipher: auto
+  password: 7f512873-af85-4f00-8588-26a3ca9f8dd8
   udp: true
-  tls: true
+  sni: linkgo.wakvpn.me
   skip-cert-verify: true
-  servername: nusa4.nextvpn.cc
   network: ws
   ws-opts:
-    path: /vpnneo
-    headers:
-      Host: nusa4.nextvpn.cc
+    path: "/trojan-ws"
+  headers:
+    Host: linkgo.wakvpn.me
 - name: Hurricane Electric
   type: vmess
   server: 104.18.11.39
