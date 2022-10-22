@@ -1,17 +1,4 @@
 proxies:
-- name: LinkGo
-  type: trojan
-  server: 104.18.11.39
-  port: 443
-  password: 7f512873-af85-4f00-8588-26a3ca9f8dd8
-  udp: true
-  sni: linkgo.wakvpn.me
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/trojan-ws"
-  headers:
-    Host: linkgo.wakvpn.me
 - name: Hurricane Electric
   type: vmess
   server: 104.18.11.39
