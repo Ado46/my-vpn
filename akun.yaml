@@ -1,17 +1,14 @@
 proxies:
-- name: Hurricane Electric
-  type: vmess
+- name: Contabo
+  type: trojan
   server: 104.18.11.39
   port: 443
-  uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3
-  alterId: 0
-  cipher: auto
+  password: b209fdaa-ce21-47a5-b107-a5db26ebcd8c
   udp: true
-  tls: true
+  sni: contabo.belivpn.my.id
   skip-cert-verify: true
-  servername: sg2-v2ray.sshkit.org
   network: ws
   ws-opts:
-    path: /sshkit/911948719/63163e87583a0/
-    headers:
-      Host: sg2-v2ray.sshkit.org
+    path: "/trojanws"
+  headers:
+    Host: contabo.belivpn.my.id
